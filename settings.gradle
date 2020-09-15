@@ -1,0 +1,2 @@
+rootProject.name='GTA5Guide'
+include ':app'

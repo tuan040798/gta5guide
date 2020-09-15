@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_start"
+    android:orientation="vertical"
+    android:gravity="bottom|center"
+    tools:context="com.gta.guys.guide.StartActivity">
+    <ImageView
+        android:id="@+id/btn_start"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_start"
+        android:visibility="gone"
+        />
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/numberbar1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:progress_unreached_color="#CCCCCC"
+        app:progress_reached_color="#FF3333"
+
+        app:progress_unreached_bar_height="0.75dp"
+        app:progress_reached_bar_height="5dp"
+
+        app:progress_text_size="20sp"
+        app:progress_text_color="#FF3333"
+        app:progress_text_offset="1dp"
+        app:progress_text_visibility="visible"
+
+        app:progress_max="100"
+        app:progress_current="10"
+        />
+
+<!--    <com.daimajia.numberprogressbar.NumberProgressBar-->
+<!--        android:id="@+id/numberbar1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:padding="20dp"-->
+<!--        custom:progress_current="0"-->
+<!--        style="@style/NumberProgressBar_Default"-->
+<!--        android:layout_height="wrap_content" />-->
+
+    <RelativeLayout
+        android:id="@+id/adMobView"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    </LinearLayout>
